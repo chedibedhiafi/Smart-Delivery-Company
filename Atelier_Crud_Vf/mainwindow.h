@@ -3,6 +3,8 @@
 #include "employes.h"
 #include <QMainWindow>
 #include "poste.h"
+#include <QMediaPlayer>
+
 
 namespace Ui {
 class MainWindow;
@@ -26,10 +28,18 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pushButton_3_clicked();
+
+
+
 private:
     Ui::MainWindow *ui;
     Employes tmpemployes;
     Poste tmpposte;
+    Employes tmpFour;
+    QMediaPlayer *click;
+
+
 };
 
 #endif // MAINWINDOW_H

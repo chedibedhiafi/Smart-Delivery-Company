@@ -15,6 +15,9 @@ class Employes
     bool ajouter();
     QSqlQueryModel * afficher();
     bool supprimer(int);
+    bool modifierFour(int);
+    QSqlQueryModel *affciherFour();
+     QSqlQueryModel *trier();
 private:
     QString nom,prenomn,adresse,email;
     int cin;

@@ -57,4 +57,34 @@ query.prepare("Delete from employer where CIN = :cin ");
 query.bindValue(":cin", res);
 return    query.exec();
 }
+bool Employes::modifierFour(int cin )
+ {
+     QSqlQuery query;
+
+      QString res=QString::number(cin);
+
+
+     query.prepare("UPDATE EMPLOYER SET CIN=:cin,NOM=:nom,PRENOM=:prenom,EMAIL=:email,ADRESSE=:adresse,where CIN=:cin");
+
+     query.bindValue(":cin",res);
+     query.bindValue(":nom",nom);
+     query.bindValue(":prenom",prenomn);
+     query.bindValue(":email",email);
+     query.bindValue(":adresse",adresse);
+
+
+
+
+
+     return query.exec();
+ }
+QSqlQueryModel * Employes::trier()
+{
+    QSqlQuery *q=new QSqlQuery();
+QSqlQueryModel *model=new QSqlQueryModel();
+q->prepare("SELECT * FROM EMPLOYER order by nom ASC");
+q->exec();
+model->setQuery(*q);
+return model;
+}
 

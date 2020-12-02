@@ -13,6 +13,8 @@ class Poste
     bool ajouter();
     QSqlQueryModel * afficher();
     bool supprimer(int);
+     bool modifierFour(int);
+          QSqlQueryModel *trier();
 private:
     QString nom;
     int codeposte,montant;

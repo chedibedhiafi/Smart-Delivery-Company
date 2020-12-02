@@ -3,6 +3,7 @@
 #include "employes.h"
 #include <QMessageBox>
 #include "poste.h"
+#include <QString>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -14,6 +15,9 @@ ui->tabemployes->setModel(tmpemployes.afficher());
 /*
 ui->tabposte->setModel(tmpposte.afficher());
 */
+/*ui->afficherFour->setModel(tmpFour.afficher());*/
+click = new QMediaPlayer();
+click->setMedia(QUrl::fromLocalFile("C:/Users/chedi/Desktop/click.mp3"));
 }
 
 MainWindow::~MainWindow()
@@ -23,6 +27,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pb_ajouter_clicked()
 {
+    click->setMedia(QUrl::fromLocalFile("C:/Users/chedi/Desktop/click.mp3"));
+    click->play();
+    qDebug()<<click ->errorString();
+
     int cin = ui->lineEdit_cin->text().toInt();
     QString nom= ui->lineEdit_nom->text();
     QString prenom= ui->lineEdit_prenom->text();
@@ -49,6 +57,9 @@ QMessageBox::information(nullptr, QObject::tr("Ajouter un employes"),
 
 void MainWindow::on_pb_supprimer_clicked()
 {
+    click->setMedia(QUrl::fromLocalFile("C:/Users/chedi/Desktop/click.mp3"));
+    click->play();
+    qDebug()<<click ->errorString();
 int cin = ui->lineEdit_cin_2->text().toInt();
 bool test=tmpemployes.supprimer(cin);
 if(test)
@@ -70,6 +81,9 @@ else
 
 void MainWindow::on_pushButton_clicked()
 {
+    click->setMedia(QUrl::fromLocalFile("C:/Users/chedi/Desktop/click.mp3"));
+    click->play();
+    qDebug()<<click ->errorString();
 
         int codeposte = ui->lineEdit_codeposte->text().toInt();
         int montant = ui->lineEdit_montant->text().toInt();
@@ -98,6 +112,9 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
+    click->setMedia(QUrl::fromLocalFile("C:/Users/chedi/Desktop/click.mp3"));
+    click->play();
+    qDebug()<<click ->errorString();
     int codeposte = ui->lineEdit_codeposte_2->text().toInt();
     bool test=tmpposte.supprimer(codeposte);
     if(test)
@@ -114,7 +131,7 @@ void MainWindow::on_pushButton_2_clicked()
 
 
 }
-
+/*
 void MainWindow::on_pushButton_4_clicked()
 {
 
@@ -135,9 +152,67 @@ void MainWindow::on_pushButton_4_clicked()
     }
 
 
+*/
 
 
-}
+
+
+
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    int cin=ui->lineEdit_modifiercin->text().toInt();
+             QString nom=ui->lineEdit_modifiernom->text();
+             QString prenom=ui->lineEdit_modifierprenom->text();
+
+             QString email=ui->lineEdit_modifieremail->text();
+
+             QString adresse=ui->lineEdit_modifieradresse->text();
+
+             Employes F(cin,nom,prenom,email,adresse);
+
+          bool test=F.modifierFour(cin);
+          if(test)
+          { Employes tmpFour;
+              ui->afficherFour->setModel(tmpFour.afficher());//refresh
+              QMessageBox::information(nullptr,QObject::tr("modifier"),
+                      QObject::tr("Succes.\n""click cancel to exit."),QMessageBox::Cancel);
+
+
+          }
+          else
+              QMessageBox::critical(nullptr,QObject::tr("modifier"),
+                                    QObject::tr(" Erreur .\n""Click cancel to exit."),QMessageBox::Cancel);
+    }
+
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    click->setMedia(QUrl::fromLocalFile("C:/Users/chedi/Desktop/click.mp3"));
+    click->play();
+    qDebug()<<click ->errorString();
+    int codeposte=ui->lineEdit_modifiercodeposte->text().toInt();
+             QString nom=ui->lineEdit_modifiernom1->text();
+             int montant=ui->lineEdit_modifiermontant->text().toInt();
+
+
+
+             Poste F(codeposte,nom,montant);
+
+          bool test=F.modifierFour(codeposte);
+          if(test)
+          { Poste tmpposte;
+              ui->afficherFour->setModel(tmpposte.afficher());
+              QMessageBox::information(nullptr,QObject::tr("modifier"),
+                      QObject::tr("Succes.\n""click cancel to exit."),QMessageBox::Cancel);
+
+
+          }
+          else
+              QMessageBox::critical(nullptr,QObject::tr("modifier"),
+                                    QObject::tr("Erreur .\n""Click cancel to exit."),QMessageBox::Cancel);
+    }
+
 
 
 

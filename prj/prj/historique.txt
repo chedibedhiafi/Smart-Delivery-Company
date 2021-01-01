@@ -1,0 +1,15 @@
+Thu Dec 3 09:22:42 2020 L'ajout d'un produit a la base de donnees de reference = 1 a ete effectuee avec succees
+Thu Dec 3 09:23:05 2020 La supression d'un produit a la base de donnees de reference = 1 a ete effectuee avec succees
+Thu Dec 3 09:30:07 2020 L'ajout d'un produit a la base de donnees de reference = 1 a ete effectuee avec succees
+Thu Dec 3 13:11:48 2020 L'ajout d'un produit a la base de donnees de reference = 1 a ete effectuee avec succees
+Thu Dec 3 13:12:25 2020 La modification d'un produit a la base de donnees de reference = 1 a ete effectuee avec succees
+Thu Dec 3 14:31:14 2020 La supression d'un produit a la base de donnees de reference = 1 a ete effectuee avec succees
+Thu Dec 3 14:31:21 2020 La supression d'un produit a la base de donnees de reference = 1 a ete effectuee avec succees
+Thu Dec 3 14:31:25 2020 La supression d'un produit a la base de donnees de reference = 1 a ete effectuee avec succees
+Thu Dec 3 14:31:27 2020 La supression d'un produit a la base de donnees de reference = 0 a ete effectuee avec succees
+Thu Dec 3 14:36:57 2020 L'ajout d'un produit a la base de donnees de reference = 11393 a ete effectuee avec succees
+Thu Dec 3 14:37:12 2020 La modification d'un produit a la base de donnees de reference = 11393 a ete effectuee avec succees
+Thu Dec 3 15:10:54 2020 L'ajout d'un produit a la base de donnees de reference = 123 a ete effectuee avec succees
+Thu Dec 3 15:11:33 2020 La modification d'un produit a la base de donnees de reference = 123 a ete effectuee avec succees
+Thu Dec 3 15:11:45 2020 La supression d'un produit a la base de donnees de reference = 11393 a ete effectuee avec succees
+Thu Dec 3 15:15:15 2020 L'ajout d'un produit a la base de donnees de reference = 112 a ete effectuee avec succees

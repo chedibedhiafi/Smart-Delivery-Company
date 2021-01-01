@@ -1,0 +1,15 @@
+debug/categorie.o
+debug/connecion.o
+debug/email.o
+debug/gestion_categorie.o
+debug/gestion_produit.o
+debug/historique.o
+debug/main.o
+debug/menu.o
+debug/produit.o
+debug/smtp.o
+debug/moc_email.o
+debug/moc_gestion_categorie.o
+debug/moc_gestion_produit.o
+debug/moc_menu.o
+debug/moc_smtp.o

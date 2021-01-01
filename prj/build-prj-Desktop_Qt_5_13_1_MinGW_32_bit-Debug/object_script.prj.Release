@@ -1,0 +1,15 @@
+release/categorie.o
+release/connecion.o
+release/email.o
+release/gestion_categorie.o
+release/gestion_produit.o
+release/historique.o
+release/main.o
+release/menu.o
+release/produit.o
+release/smtp.o
+release/moc_email.o
+release/moc_gestion_categorie.o
+release/moc_gestion_produit.o
+release/moc_menu.o
+release/moc_smtp.o

@@ -4,7 +4,7 @@ categorie::categorie()
 {
 
 }
-
+//comment
 categorie::categorie(int id,QString nom)
 {
   this->id=id;

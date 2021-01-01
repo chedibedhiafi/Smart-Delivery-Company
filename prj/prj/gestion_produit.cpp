@@ -256,3 +256,4 @@ void gestion_produit::on_pushButton_clicked()
         QMessageBox::information(nullptr,QObject::tr("Creation PDF"),QObject::tr("PDF crée .\n"
                                                                                            "Click Cancel to exit ."),QMessageBox::Cancel);
 }
+//test

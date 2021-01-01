@@ -1,0 +1,5 @@
+QMediaPlayer *click;
+    click= new QMediaPlayer();
+    click->setMedia(QUrl::fromLocalFile("C:\Users\zizo_\Desktop\Med_aziz\Med_aziz\Mouse_Click.mp3"));
+    click->play();
+    qDebug()<<click ->errorString();

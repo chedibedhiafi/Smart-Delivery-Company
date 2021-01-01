@@ -23,6 +23,7 @@ liv::liv(QWidget *parent) :
      ui->lineEdit_modifierNom->setValidator(new QRegExpValidator(rx, this));
      ui->lineEdit_modifierPrenom->setValidator(new QRegExpValidator(rx, this));
      ui->lineEdit_etatLiv->setValidator(new QRegExpValidator(rx, this));
+    //cc
      ui->lineEdit_modifierEtat->setValidator(new QRegExpValidator(rx, this));
      /*ui->line_descLiv->setValidator(new QRegExpValidator(rx, this));
      ui->LineEdit_modifierDescLiv->setValidator(new QRegExpValidator(rx, this));*/

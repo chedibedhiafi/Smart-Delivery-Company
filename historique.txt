@@ -1,0 +1,4 @@
+mar. janv. 5 13:58:48 2021 La suppression d'un Employe a la base de donnees de reference = 12312 a ete effectue avec succees
+mar. janv. 5 13:59:04 2021 L'ajout d'un Employe a la base de donnees de reference = 1 a ete effectue avec succees
+mar. janv. 5 14:00:24 2021 La modification d'un Equipement a la base de donnees de reference = 2 a ete effectue avec succees
+Wed Jan 6 00:18:58 2021 L'ajout d'un Employe a la base de donnees de reference = 123546 a ete effectue avec succees

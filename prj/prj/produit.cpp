@@ -13,7 +13,7 @@ produit::produit(int id,QString nom,QString marque,int id_cat,int prix,int quant
   this->quantite=quantite;
 
 }
-
+//
 int produit::get_id(){return  id;}
 QString produit::get_nom(){return nom;}
 QString produit::get_marque(){return marque;}

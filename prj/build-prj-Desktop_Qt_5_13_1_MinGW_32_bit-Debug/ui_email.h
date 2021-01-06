@@ -19,7 +19,6 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,7 +29,6 @@ public:
     QDialogButtonBox *buttonBox;
     QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
-    QSpacerItem *horizontalSpacer;
     QPushButton *sendBtn;
     QPushButton *exitBtn;
     QWidget *layoutWidget_2;
@@ -54,35 +52,86 @@ public:
     {
         if (email->objectName().isEmpty())
             email->setObjectName(QString::fromUtf8("email"));
-        email->resize(400, 381);
+        email->resize(493, 464);
+        email->setStyleSheet(QString::fromUtf8("background-image: url(\"C:/Users/zizo_/Desktop/prj/prj/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg\"); /* The image"));
         buttonBox = new QDialogButtonBox(email);
         buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
-        buttonBox->setGeometry(QRect(30, 240, 341, 32));
+        buttonBox->setGeometry(QRect(390, 470, 341, 32));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         layoutWidget = new QWidget(email);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, -10, 204, 30));
+        layoutWidget->setGeometry(QRect(30, 410, 431, 58));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout->addItem(horizontalSpacer);
-
         sendBtn = new QPushButton(layoutWidget);
         sendBtn->setObjectName(QString::fromUtf8("sendBtn"));
+        sendBtn->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"padding: 1px;\n"
+"border-style: solid;\n"
+"border: 2px solid gray;\n"
+"border-radius: 8px;\n"
+"background-color: rgb(143, 143, 143);\n"
+"border:2px solid #000;\n"
+"}\n"
+"QPushButton {\n"
+"     color: #fff !important;\n"
+"text-transform: uppercase;\n"
+"text-decoration: none;\n"
+"background: #e12d4e;\n"
+"padding: 20px;\n"
+"border-radius: 5px;\n"
+"display: inline-block;\n"
+"border: none;\n"
+"transition: all 0.4s ease 0s;\n"
+" }\n"
+" QPushButton:hover {\n"
+"     background: #434343;\n"
+"letter-spacing: 1px;\n"
+"-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);\n"
+"-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);\n"
+"box-shadow: 5px 40px -10px rgba(0,0,0,0.57);\n"
+"transition: all 0.4s ease 0s;\n"
+" }"));
 
         horizontalLayout->addWidget(sendBtn);
 
         exitBtn = new QPushButton(layoutWidget);
         exitBtn->setObjectName(QString::fromUtf8("exitBtn"));
+        exitBtn->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"padding: 1px;\n"
+"border-style: solid;\n"
+"border: 2px solid gray;\n"
+"border-radius: 8px;\n"
+"background-color: rgb(143, 143, 143);\n"
+"border:2px solid #000;\n"
+"}\n"
+"QPushButton {\n"
+"     color: #fff !important;\n"
+"text-transform: uppercase;\n"
+"text-decoration: none;\n"
+"background: #e12d4e;\n"
+"padding: 20px;\n"
+"border-radius: 5px;\n"
+"display: inline-block;\n"
+"border: none;\n"
+"transition: all 0.4s ease 0s;\n"
+" }\n"
+" QPushButton:hover {\n"
+"     background: #434343;\n"
+"letter-spacing: 1px;\n"
+"-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);\n"
+"-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);\n"
+"box-shadow: 5px 40px -10px rgba(0,0,0,0.57);\n"
+"transition: all 0.4s ease 0s;\n"
+" }"));
 
         horizontalLayout->addWidget(exitBtn);
 
         layoutWidget_2 = new QWidget(email);
         layoutWidget_2->setObjectName(QString::fromUtf8("layoutWidget_2"));
-        layoutWidget_2->setGeometry(QRect(20, 20, 327, 368));
+        layoutWidget_2->setGeometry(QRect(30, 20, 431, 368));
         formLayout = new QFormLayout(layoutWidget_2);
         formLayout->setObjectName(QString::fromUtf8("formLayout"));
         formLayout->setFieldGrowthPolicy(QFormLayout::ExpandingFieldsGrow);
@@ -157,6 +206,7 @@ public:
 
         msg = new QPlainTextEdit(layoutWidget_2);
         msg->setObjectName(QString::fromUtf8("msg"));
+        msg->setStyleSheet(QString::fromUtf8(""));
 
         formLayout->setWidget(6, QFormLayout::FieldRole, msg);
 

@@ -131,7 +131,7 @@ public:
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(0, 0, 801, 571));
-        label->setStyleSheet(QString::fromUtf8("background-image: url(\"C:/Users/zizo_/Desktop/html-color-codes-color-tutorials-hero.jpg\"); /* The image"));
+        label->setStyleSheet(QString::fromUtf8("background-image: url(\"C:/Users/zizo_/Desktop/prj/prj/html-color-codes-color-tutorials-hero.jpg\"); /* The image"));
         Menu->setCentralWidget(centralwidget);
         label->raise();
         pushButton->raise();

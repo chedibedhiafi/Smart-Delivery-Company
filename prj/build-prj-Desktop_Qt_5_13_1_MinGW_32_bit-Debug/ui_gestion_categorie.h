@@ -123,7 +123,7 @@ public:
         label_2 = new QLabel(tab);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(0, -20, 731, 421));
-        label_2->setStyleSheet(QString::fromUtf8("background-image: url(\"C:/Users/zizo_/Desktop/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg\"); /* The image"));
+        label_2->setStyleSheet(QString::fromUtf8("background-image: url(\"C:/Users/zizo_/Desktop/prj/prj/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg\"); /* The image"));
         tabWidget->addTab(tab, QString());
         label_2->raise();
         label->raise();
@@ -194,7 +194,7 @@ public:
         label_3 = new QLabel(tab_2);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setGeometry(QRect(0, -10, 731, 421));
-        label_3->setStyleSheet(QString::fromUtf8("background-image: url(\"C:/Users/zizo_/Desktop/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg\"); /* The image"));
+        label_3->setStyleSheet(QString::fromUtf8("background-image: url(\"C:/Users/zizo_/Desktop/prj/prj/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg\"); /* The image"));
         tabWidget->addTab(tab_2, QString());
         label_3->raise();
         label_9->raise();
@@ -251,7 +251,7 @@ public:
         label_4 = new QLabel(tab_3);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(0, -10, 731, 421));
-        label_4->setStyleSheet(QString::fromUtf8("background-image: url(\"C:/Users/zizo_/Desktop/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg\"); /* The image"));
+        label_4->setStyleSheet(QString::fromUtf8("background-image: url(\"C:/Users/zizo_/Desktop/prj/prj/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg\"); /* The image"));
         tabWidget->addTab(tab_3, QString());
         label_4->raise();
         id_s->raise();
@@ -262,13 +262,14 @@ public:
         tableView = new QTableView(tab_10);
         tableView->setObjectName(QString::fromUtf8("tableView"));
         tableView->setGeometry(QRect(10, 10, 641, 361));
+        tableView->setStyleSheet(QString::fromUtf8(""));
         textBrowser = new QTextBrowser(tab_10);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setGeometry(QRect(40, 80, 611, 261));
         label_6 = new QLabel(tab_10);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(0, 0, 731, 421));
-        label_6->setStyleSheet(QString::fromUtf8("background-image: url(\"C:/Users/zizo_/Desktop/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg\"); /* The image"));
+        label_6->setStyleSheet(QString::fromUtf8("background-image: url(\"C:/Users/zizo_/Desktop/prj/prj/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg\"); /* The image"));
         tabWidget->addTab(tab_10, QString());
         label_6->raise();
         textBrowser->raise();
